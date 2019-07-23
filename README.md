@@ -1,4 +1,6 @@
-# doorsApp
-RECRUITMENT TASK
+### Запуск проекта:
+1. npm install
+1. npm start
 
-<a href="http://mykolajkrusser.zzz.com.ua/">See OnLine</a>
+### Доступ в браузере:
+1. http://localhost:3000
