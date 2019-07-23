@@ -1,0 +1,56 @@
+.Registration{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Registration h1{
+  margin: 25px;
+  color:#727272;
+}
+
+.Registration input,.Registration button{
+  min-height: 50px;
+  margin: 15px auto;
+  width: 100%;
+  border: 1px solid #C9C6C6;
+  border-radius: 6px;
+  font-size: 18px;
+  outline: none;
+}
+.Registration input{
+  background: white;
+  color: #A5A1A1;
+  padding: 0 23px;
+}
+
+.Registration button{
+ background: #1DE278;
+ color: white;
+}
+
+.Registration button:disabled{
+  background: red;
+}
+
+.Checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 15px auto 15px 0;
+  color: #A5A1A1;
+}
+.Checkbox input{
+  width: 25px;
+  min-height: 25px;
+  margin: 0 20px 0 0;
+}
+.Checkbox label{
+  margin-right: 5px;
+}
+
+.Error_message{
+  color: red;
+}

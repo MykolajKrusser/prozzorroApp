@@ -1,0 +1,23 @@
+.ToolsItems{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+	align-items: center;
+	height: 100%;
+	display: flex;
+}
+
+.ToolsItems a {
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 5px;
+}
+
+.ToolsItems button{
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 5px;
+}

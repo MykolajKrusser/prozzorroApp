@@ -1,0 +1,13 @@
+.ButtonInfo{
+  background: #77779D;
+  min-height: 32px;
+  margin: 0 20px;
+  width: 120px;
+  border: 1px solid #77779D;
+  border-radius: 3px;
+  font-size: 18px;
+  outline: none;
+  font-size: 14px;
+  color: white;
+}
+

@@ -1,0 +1,40 @@
+.Login{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Login h1{
+  margin: 25px;
+  color:#727272;
+}
+
+.Login input,.Login button{
+  min-height: 50px;
+  margin: 15px auto;
+  width: 100%;
+  border: 1px solid #C9C6C6;
+  border-radius: 6px;
+  font-size: 18px;
+  outline: none;
+}
+.Login input{
+  background: white;
+  color: #A5A1A1;
+  padding: 0 23px;
+}
+
+.Login button{
+ background: #1DE278;
+ color: white;
+}
+
+.Login button:disabled{
+  background: red;
+}
+
+.Error_message{
+  color: red;
+}

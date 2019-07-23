@@ -1,0 +1,49 @@
+.Background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(173, 178, 181, 0.658);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Background p{
+  color:#FFFFFF;
+}
+.Box {
+  width: 310px;
+  height: 32px;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 16px;
+  z-index: 200;
+}
+
+.Line {
+  width: 100%;
+  height: 18px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  transform-origin: top left;
+  animation: grow 2s forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0.01);
+    display: flex;
+    }
+  
+  100% {
+    transform: scaleX(1);
+    display: none;
+  }
+}
+
