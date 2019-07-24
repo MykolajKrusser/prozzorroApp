@@ -15,7 +15,6 @@ class ToolBar extends Component {
   };
   
   render(){
-    console.log(this.props.token);
     return (
       <header className={classes.ToolBar}>
         <Logo/>

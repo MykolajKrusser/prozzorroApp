@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes';
 const initState = {
   email: '',
   password: '',
-  token: null,
+  token: "1",
   error: null,
   user: null,
   loading: false,
