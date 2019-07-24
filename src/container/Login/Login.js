@@ -6,7 +6,6 @@ import classes from './Login.css';
 
 import * as action from '../../store/actions/actionTypes';
 import * as actions from '../../store/actions/index';
-import { stat } from 'fs';
 
 export class Login extends Component{
 

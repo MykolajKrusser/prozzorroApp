@@ -36,7 +36,6 @@ const reducer = (state=initState, action)=>{
         loading: false,
       }
     case actionTypes.USER_SUCCESS:
-      console.log('from auth!')
       return{
         ...state,
         user: action.data.user,
@@ -48,6 +47,11 @@ const reducer = (state=initState, action)=>{
         error: action.error,
         loading: false
       }
+    case actionTypes.LOGOUT_SUCCESS:
+        return{
+          ...state,
+          token: null,
+        }
     default: return state;
   }
 };

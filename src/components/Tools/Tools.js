@@ -5,10 +5,10 @@ import classes from './Tools.css';
 
 const tools = (props)=>(
   <div className={classes.ToolsItems}>
+     {props.isAuth ? <button onClick={props.logout}>Выйти</button> : null}
     {!props.isAuth ? <NavLink to='/login' >Вход</NavLink> : null}
     {props.isAuth ? <NavLink to='/user' >Личный кабинет</NavLink> : null}
     <NavLink to='/' exact>Главная</NavLink>
-    <button onClick={props.logout}>Выйти</button>
   </div>
 );
 
