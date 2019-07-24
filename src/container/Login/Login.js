@@ -19,14 +19,12 @@ export class Login extends Component{
     return(
       <div className={classes.Login}>
         <h1>Log in</h1>
-        <p className={classes.Error_message}>{this.props.emailError}</p>
         <input 
           placeholder="Email address" 
           type="email" 
           onChange={this.props.onChangeEmail} 
           value={this.props.email}
         />
-        <p className={classes.Error_message}>{this.props.errorPassword}</p>
         <input 
           placeholder="Password" 
           type="password" 

@@ -5,6 +5,7 @@ const initState = {
   password: '',
   token: null,
   error: null,
+  user: null,
   loading: false,
 }
 
@@ -29,7 +30,16 @@ const reducer = (state=initState, action)=>{
     case actionTypes.AUTH_SUCCESS:
       return{
         ...state,
-        token: action.data,
+        token: action.token,
+        user: action.user,
+        error: null,
+        loading: false,
+      }
+    case actionTypes.USER_SUCCESS:
+      console.log('from auth!')
+      return{
+        ...state,
+        user: action.data.user,
         error: null,
         loading: false,
       }

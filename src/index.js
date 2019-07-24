@@ -10,12 +10,14 @@ import thunk from 'redux-thunk';
 
 import registrationReducer from './store/reducers/registration';
 import authReducer from './store/reducers/auth';
+import userReducer from './store/reducers/user';
 
 const composeEnhancers = compose;
 
 const rootReducers = combineReducers({
 	reg: registrationReducer,
 	auth: authReducer,
+	user: userReducer
 })
 
 const stateStore = createStore(rootReducers, composeEnhancers(

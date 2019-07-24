@@ -2,6 +2,17 @@ export const AUTH_START = 'AUTH_START';
 export const AUTH_SUCCESS = 'AUTH_SUCCESS';
 export const AUTH_FAIL = 'AUTH_FAIL';
 
+export const USER_START = 'USER_START';
+export const USER_SUCCESS = 'USER_SUCCESS';
+export const USER_FAIL = 'USER_FAIL';
+export const USER_EDIT_MOD = 'USER_EDIT_MOD';
+
+export const USER_NAME = 'USER_NAME';
+export const USER_SURNAME = 'USER_SURNAME';
+export const USER_NAME_CUSTOMER = 'USER_NAME_CUSTOMER';
+export const USER_CLIENT_ROLE = 'USER_CLIENT_ROLE';
+
+
 export const LOGOUT_START = 'LOGOUT_START';
 export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
 export const LOGOUT_FAIL = 'LOGOUT_FAIL';

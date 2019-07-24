@@ -5,8 +5,9 @@ import classes from './Tools.css';
 
 const tools = (props)=>(
   <div className={classes.ToolsItems}>
-    <NavLink to='/'>Главная</NavLink>
-    <NavLink to='/login' >Вход</NavLink>
+    {!props.isAuth ? <NavLink to='/login' >Вход</NavLink> : null}
+    {props.isAuth ? <NavLink to='/user' >Личный кабинет</NavLink> : null}
+    <NavLink to='/' exact>Главная</NavLink>
     <button onClick={props.logout}>Выйти</button>
   </div>
 );

@@ -7,17 +7,18 @@ export const authStart = ()=>{
   };
 };
 
-export const authSuccess = (data)=>{
+export const authSuccess = (token, user)=>{
   return {
     type: actionType.AUTH_SUCCESS,
-    data: data
+    token: token,
+    user: user
   };
 };
 
-export const DelaedAuthSuccess = (data)=>{
+export const DelaedAuthSuccess = (token, user)=>{
   return dispatch => {
     setTimeout(()=>{
-      dispatch(authSuccess(data));
+      dispatch(authSuccess(token, user));
     }, 2000)
   };
 };
@@ -39,7 +40,7 @@ export const auth = (email, password)=>{
     const session = '/login';
     axios.post(session, authData)
       .then( response =>{
-        dispatch(DelaedAuthSuccess(response.data.token))
+        dispatch(DelaedAuthSuccess(response.data.token, response.data.user))
       })
       .catch(err=>{
         dispatch(authFail(err));

@@ -1,0 +1,15 @@
+.User{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100vh;
+}
+
+.User h1, .User ul, .User button{
+  margin: 20px auto;
+}
+
+.User button{
+  width: 100px;
+}

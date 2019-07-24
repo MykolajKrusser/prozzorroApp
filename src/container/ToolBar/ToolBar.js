@@ -21,7 +21,6 @@ class ToolBar extends Component {
         <nav>
           <Tools 
             isAuth={this.props.isAuth}
-            organization= {this.props.organization}
             logout={this.logoutHandler}
           />
         </nav>
@@ -32,7 +31,8 @@ class ToolBar extends Component {
 
 const mapStateToProps = state =>{
   return {
-    token: state.auth.token
+    token: state.auth.token,
+    isAuth: state.auth.token !== null
   }
 }
 

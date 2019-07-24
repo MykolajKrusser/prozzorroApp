@@ -15,10 +15,12 @@ const asyncMainPage = asyncComponent(()=>{
   return import ('./container/MainPage/MainPage')
 });
 
+const asyncUser = asyncComponent(()=>{
+  return import ('./container/User/User')
+});
 
 class App extends Component {
   render() {
-    console.log(this.props.token)
     let progressBar;
     let routes = (
       <Switch>
@@ -31,6 +33,7 @@ class App extends Component {
     if (this.props.isAuthenticated){
       routes = (
         <Switch>
+          <Route path='/user' component={asyncUser}/>
           <Route path='/' exact component={asyncMainPage}/>
           <Redirect to='/'/>
         </Switch>
@@ -41,6 +44,9 @@ class App extends Component {
       progressBar = <ProgressBar/>
     };
     if(this.props.loadingAuth){
+      progressBar = <ProgressBar/>
+    };
+    if(this.props.loadingUserEdit){
       progressBar = <ProgressBar/>
     };
 
@@ -59,6 +65,7 @@ const mapStateToProps = state => {
   return{
     loadingReg: state.reg.loading,
     loadingAuth: state.auth.loading,
+    loadingUserEdit: state.user.loading,
     token: state.auth.token,
     registarionResponse: state.reg.registarionResponse,
     isAuthenticated: state.auth.token != null
